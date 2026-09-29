@@ -290,12 +290,27 @@ body {
     min-height: 50%;
   }
 
+  /* Dedicated crops so faces stay in frame on tall mobile halves */
   .side--glamorize::before {
-    background-position: center top;
+    background-image: url('../assets/images/hero-glamorize.webp');
+    background-position: center 25%;
+    background-size: cover;
+    opacity: 0.55;
   }
 
   .side--barbershop::before {
-    background-position: center bottom;
+    background-image: url('../assets/images/hero-barbershop.webp');
+    background-position: center 30%;
+    background-size: cover;
+    opacity: 0.55;
+  }
+
+  .side__overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.1) 0%,
+      rgba(0,0,0,0.5) 100%
+    );
   }
 
   .portal__center {
