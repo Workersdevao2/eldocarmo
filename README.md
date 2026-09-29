@@ -116,6 +116,13 @@ Also listed: 930 095 886 / 925 184 386 (barbershop secondary)
 
 > **Convention:** Every important update lists the exact files changed so you can download only those and push to GitHub.
 
+### 2026-09-29 — Portal mobile layout (ENTRAR clear of center logo)
+
+Glamorize content raised so ENTRAR clears the center logo. Barbershop left as-is (already fine). Center logo slightly smaller on mobile.
+
+**Portal**
+- `portal/css/style.css` (mobile + 480px media queries)
+
 ### 2026-09-29 — Preview URLs wired up
 
 Cross-site links updated to current Cloudflare Workers preview domains.
