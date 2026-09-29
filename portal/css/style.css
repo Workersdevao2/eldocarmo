@@ -313,17 +313,15 @@ body {
     );
   }
 
-  /* Raise Glamorize content so ENTRAR clears the center logo */
+  /* Center Glamorize content in the top half; bottom padding keeps ENTRAR clear of center logo */
   .side--glamorize {
     align-items: center;
-    justify-content: flex-start;
-    padding-top: 1.25rem;
+    justify-content: center;
   }
 
   .side--glamorize .side__content {
     gap: 0.6rem;
-    padding-top: 0.5rem;
-    padding-bottom: 2.5rem; /* keep clear of center logo */
+    padding-bottom: 2.25rem; /* keep clear of center logo */
   }
 
   .side__cta {
@@ -367,12 +365,8 @@ body {
     max-width: 105px;
   }
 
-  .side--glamorize {
-    padding-top: 1rem;
-  }
-
   .side--glamorize .side__content {
-    padding-bottom: 2.75rem;
+    padding-bottom: 2.5rem;
   }
 
   .side__brand {
