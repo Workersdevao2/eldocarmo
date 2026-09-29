@@ -9,13 +9,15 @@ No frameworks. No build step. Ready for Cloudflare Pages + GitHub.
 
 ## Architecture
 
-| Site | Folder | Domain | Description |
-|------|--------|--------|-------------|
-| **Portal** | `/portal` | eldocarmo.com | Split-image gateway. Left → Glamorize · Right → Barber Shop |
-| **Barbershop** | `/barbershop` | eldocarmobarbershop.com | Full men's site: services, mini-bar + cart → WhatsApp, gallery, Lubango recruitment |
-| **Glamorize** | `/glamorize` | eldocarmoglamorize.com | Full women's beauty site: services, gallery, contact |
+| Site | Folder | Final domain | Preview (current) | Description |
+|------|--------|--------------|-------------------|-------------|
+| **Portal** | `/portal` | eldocarmo.com | [eldocarmo.workersdevao.workers.dev](https://eldocarmo.workersdevao.workers.dev/) | Split-image gateway. Left → Glamorize · Right → Barber Shop |
+| **Barbershop** | `/barbershop` | eldocarmobarbershop.com | [eldocarmobarbershop.workersdevao.workers.dev](https://eldocarmobarbershop.workersdevao.workers.dev) | Full men's site: services, mini-bar + cart → WhatsApp, gallery, Lubango recruitment |
+| **Glamorize** | `/glamorize` | eldocarmoglamorize.com | [eldocarmoglamorize.workersdevao.workers.dev](https://eldocarmoglamorize.workersdevao.workers.dev) | Full women's beauty site: services, gallery, contact |
 
 Each folder is a complete, self-contained site intended for its own GitHub repository.
+
+> Cross-site links currently point to the **preview** URLs above. When final domains are live, replace them in the HTML files.
 
 ---
 
@@ -113,6 +115,31 @@ Also listed: 930 095 886 / 925 184 386 (barbershop secondary)
 ## Changelog / Files Changed
 
 > **Convention:** Every important update lists the exact files changed so you can download only those and push to GitHub.
+
+### 2026-09-29 — Preview URLs wired up
+
+Cross-site links updated to current Cloudflare Workers preview domains.
+
+**Portal**
+- `portal/index.html` (Glamorize + Barbershop hrefs → workers.dev)
+
+**Barbershop**
+- `barbershop/index.html` (footer → portal workers.dev)
+
+**Glamorize**
+- `glamorize/index.html` (footer → portal workers.dev)
+
+**Root**
+- `README.md` (architecture table + preview links)
+
+### 2026-09-29 — Portal mobile fix (faces in frame)
+
+Mobile was cropping out the people from the split-hero. Fixed with dedicated left/right crops + better positioning.
+
+**Portal**
+- `portal/css/style.css` (mobile media query — dedicated hero images + position/opacity)
+- `portal/assets/images/hero-glamorize.webp` *(new)*
+- `portal/assets/images/hero-barbershop.webp` *(new)*
 
 ### 2026-09-29 — Image optimization (WebP)
 
