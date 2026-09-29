@@ -118,7 +118,7 @@ Also listed: 930 095 886 / 925 184 386 (barbershop secondary)
 
 ### 2026-09-29 — Portal mobile layout (ENTRAR clear of center logo)
 
-Glamorize content raised so ENTRAR clears the center logo. Barbershop left as-is (already fine). Center logo slightly smaller on mobile.
+Glamorize block centered in the top half; bottom padding keeps ENTRAR clear of the center logo. Barbershop left as-is. Center logo slightly smaller on mobile.
 
 **Portal**
 - `portal/css/style.css` (mobile + 480px media queries)
