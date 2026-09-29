@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eldo Carmo Empreendimentos — Portal oficial. Barber Shop e Glamorize Beauty em Luanda, Angola.">
+  <title>Eldo Carmo Empreendimentos</title>
+  
+  <!-- Preload critical assets -->
+  <link rel="preload" href="assets/images/split-hero.webp" as="image">
+  <link rel="preload" href="assets/images/eldocarmologo.webp" as="image">
+  
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="assets/images/eldocarmologo.webp" type="image/webp">
+</head>
+<body>
+  <div class="portal">
+    <!-- Left side - Glamorize -->
+    <a href="https://eldocarmoglamorize.com" class="side side--glamorize" id="glamorize-side">
+      <div class="side__overlay"></div>
+      <div class="side__content">
+        <img src="assets/images/eldocarmoglamorizelogo.webp" alt="Glamorize" class="side__logo side__logo--glamorize">
+        <span class="side__label">Beleza & Estética</span>
+        <span class="side__cta">Entrar</span>
+      </div>
+    </a>
+
+    <!-- Center logo -->
+    <div class="portal__center">
+      <img src="assets/images/eldocarmologo.webp" alt="Eldo Carmo Empreendimentos" class="portal__logo">
+      <p class="portal__tagline">Empreendimentos</p>
+    </div>
+
+    <!-- Right side - Barbershop -->
+    <a href="https://eldocarmobarbershop.com" class="side side--barbershop" id="barbershop-side">
+      <div class="side__overlay"></div>
+      <div class="side__content">
+        <span class="side__brand">ELDO CARMO</span>
+        <span class="side__label">Barber Shop</span>
+        <span class="side__cta">Entrar</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- Mobile fallback navigation -->
+  <nav class="mobile-nav" aria-label="Navegação móvel">
+    <a href="https://eldocarmoglamorize.com" class="mobile-nav__link mobile-nav__link--glamorize">
+      Glamorize
+      <span>Beleza & Estética</span>
+    </a>
+    <a href="https://eldocarmobarbershop.com" class="mobile-nav__link mobile-nav__link--barbershop">
+      Eldo Carmo
+      <span>Barber Shop</span>
+    </a>
+  </nav>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
